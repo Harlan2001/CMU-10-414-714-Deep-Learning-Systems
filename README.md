@@ -1,32 +1,7 @@
 # CMU10-714: Deep Learning System
-This repo contains all the learning materials and homework implementation for the CMU10-714: Deep Learning System course.
 
-## Course Overview
+The rapid growth and widespread adoption of deep learning is largely due to a number of simple and powerful programming frameworks, such as Pytorch and Tensorflow.However, most practitioners are only "packmen" of these frameworks and have little knowledge of the internal implementation details of these frameworks.If you're interested in developing the underlying frameworks for deep learning, or are just as curious as I am about the inner implementations of these frameworks, this course is a great place to start.
 
-Deep learning methods have revolutionized a number of fields in Artificial Intelligence and Machine Learning in recent years. The widespread adoption of deep learning methods have in no small part been driven by the widespread availability of easy-to-use deep learning systems, such as PyTorch and TensorFlow. But despite their widespread availability and use, it is much less common for students to get involved with the internals of these libraries, to understand how they function at a fundamental level. But understanding these libraries deeply will help you make better use of their functionality, and enable you to develop or extend these libraries when needed to fit your own custom use cases in deep learning.
+The content outline of the course covers the knowledge system of the deep learning system "full stack".From the top-level design of modern deep learning system framework, to the principle and implementation of self-differentiation algorithm, to the underlying hardware acceleration and actual production deployment.In order to better grasp the theoretical knowledge, students will design and implement a complete deep learning library Needle from scratch in 5 course assignments, enabling automatic differentiation of calculation graphs, hardware acceleration on GPU, and support for various loss functions, data loaders, and optimizers.On this basis, students will implement several common neural networks, including CNN, RNN, LSTM, Transformer and so on.
 
-The goal of this course is to provide students an understanding and overview of the “full stack” of deep learning systems, ranging from the high-level modeling design of modern deep learning systems, to the basic implementation of automatic differentiation tools, to the underlying device-level implementation of efficient algorithms. Throughout the course, students will design and build from scratch a complete deep learning library, capable of efficient GPU-based operations, automatic differentiation of all implemented functions, and the necessary modules to support parameterized layers, loss functions, data loaders, and optimizers. Using these tools, students will then build several state-of-the-art modeling methods, including convolutional networks for image classification and segmentation, recurrent networks and self-attention models for sequential tasks such as language modeling, and generative models for image generation.
-
-## Course Materials
-
-- Course Website: <https://dlsyscourse.org/>
-- Lecture Record: <https://www.youtube.com/watch?v=qbJqOFMyIwg>
-- Lecture Notes: under [lectures](./lectures/) folder.
-- Homework Implementation: under [homework](./homework/) folder.
-
-## Final Project
-
-The goal of the final course project is to implement some non-trivial deep learning model or component within the needle framework. The assignment as a whole is fairly open-ended, and many different options are available: you could implement some class of model (requiring functionality beyond what we cover in the homework), some new suite of optimizers, some new functionality within the autodiff framework, or some new backend support for needle.
-
-In our final project, we added Apple M1 chip support to the Needle framework. We passed all the unit tests used in the assignments, compared its performance to the naive CPU backend and trained ResNet on the CIFAR-10 dataset. The implementation is open-sourced [here](https://github.com/wenjunsun/dlsys-needle-m1).
-
-Some reference resources:
-- <https://github.com/larsgeb/m1-gpu-cpp>
-- <https://larsgeb.github.io/2022/04/20/m1-gpu.html>
-- <https://github.com/bkvogel/metal_performance_testing>
-
-
-
-## Want to learn more ?
-
-Check out [this repository](https://github.com/PKUFlyingPig/cs-self-learning) which contains all my self-learning materials : )
+The course will begin step by step with simple classification problems and backpropagation optimization. The accompanying jupyter notebook will describe the implementation details for some relatively complex neural networks.If you have some basic knowledge, then you can start the course work directly after learning the content of self-differentiation. Although it is not difficult, I believe it will bring you a new understanding.
